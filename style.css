@@ -108,3 +108,6 @@ input[type="text"] {
 .actions i:hover {
   transform: scale(1.2);
 }
+.fa-square, .fa-check-square {
+  color: green;
+}
