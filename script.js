@@ -20,3 +20,8 @@ const renderTasks = (filter = currentFilter) => {
     if ((filter === 'done' && !task.done) || (filter === 'todo' && task.done)) return;
     const taskDiv = document.createElement('div');
     taskDiv.className = 'task' + (task.done ? ' done' : '');
+    const text = document.createElement('span');
+    text.textContent = task.text;
+
+    const actions = document.createElement('div');
+    actions.className = 'actions';
