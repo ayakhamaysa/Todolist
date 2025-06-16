@@ -11,3 +11,10 @@ let currentFilter = 'all';
 const saveTasks = () => localStorage.setItem('tasks', JSON.stringify(tasks));
 const renderTasks = (filter = currentFilter) => {
   currentFilter = filter;
+  tabs.forEach(btn => btn.classList.remove('active'));
+  const activeBtn = document.querySelector(.tabs button[data-filter="${filter}"]);
+  if (activeBtn) activeBtn.classList.add('active');
+
+  taskListEl.innerHTML = '';
+  tasks.forEach((task, index) => {
+    if ((filter === 'done' && !task.done) || (filter === 'todo' && task.done)) return;
