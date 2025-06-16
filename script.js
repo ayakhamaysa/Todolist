@@ -33,3 +33,7 @@ const renderTasks = (filter = currentFilter) => {
       saveTasks();
       renderTasks();
     };
+    const edit = document.createElement('i');
+    edit.className = 'fas fa-pen';
+    edit.title = 'Edit';
+    edit.onclick = () => openEditPopup(index);
