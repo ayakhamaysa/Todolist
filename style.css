@@ -130,3 +130,10 @@ input[type="text"] {
   border-radius: 6px;
   cursor: pointer;
 }
+.delete-done {
+  background-color: #d9534f;
+}
+
+.delete-all {
+  background-color: #d43f3a;
+}
