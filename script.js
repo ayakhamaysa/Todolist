@@ -67,3 +67,16 @@ const addTask = () => {
   saveTasks();
   renderTasks();
 };
+const openEditPopup = index => {
+  const newText = prompt("Rename task:", tasks[index].text);
+  if (newText !== null) {
+    const error = validateInput(newText.trim());
+    if (error) {
+      alert(error);
+    } else {
+      tasks[index].text = newText.trim();
+      saveTasks();
+      renderTasks();
+    }
+  }
+};
