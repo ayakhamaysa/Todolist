@@ -4,3 +4,4 @@
  const tabs = document.querySelectorAll('.tabs button');
  const deleteDoneBtn = document.querySelector('.delete-done');
  const deleteAllBtn = document.querySelector('.delete-all');
+ const addBtn = document.getElementById('addBtn');
