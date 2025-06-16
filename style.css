@@ -101,3 +101,7 @@ input[type="text"] {
   gap: 10px;
   font-size: 18px;
 }
+.actions i {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
