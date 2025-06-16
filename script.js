@@ -80,3 +80,15 @@ const openEditPopup = index => {
     }
   }
 };
+const openDeletePopup = index => {
+  tasks.splice(index, 1);
+  saveTasks();
+  renderTasks();
+};
+
+const deleteDoneTasks = () => {
+  if (!tasks.some(t => t.done)) return alert("No tasks to delete");
+  tasks = tasks.filter(task => !task.done);
+  saveTasks();
+  renderTasks();
+};
