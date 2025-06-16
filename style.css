@@ -113,3 +113,10 @@ input[type="text"] {
 }
 .fa-pen { color: orange; }
 .fa-trash { color: red; }
+.footer-buttons {
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px 0;
+}
