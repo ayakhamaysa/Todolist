@@ -68,4 +68,6 @@ input[type="text"] {
   cursor: pointer;
 }
 .tabs button.active {
+    background-color: #007f8a;
 }
+
