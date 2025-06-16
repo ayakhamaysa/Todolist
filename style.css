@@ -87,4 +87,8 @@ input[type="text"] {
   margin-bottom: 8px;
   border-radius: 6px;
 }
-.task span {}
+.task span {
+  flex: 1;
+  margin: 0 10px;
+  transition: text-decoration 0.3s;
+}
