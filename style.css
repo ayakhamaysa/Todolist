@@ -92,3 +92,7 @@ input[type="text"] {
   margin: 0 10px;
   transition: text-decoration 0.3s;
 }
+.task.done span {
+  text-decoration: line-through;
+  color: #c0392b;
+}
