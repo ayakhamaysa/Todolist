@@ -57,3 +57,13 @@ const validateInput = text => {
   if (text.length < 5) return 'Task must be at least 5 characters';
   return '';
 };
+const addTask = () => {
+  const value = inputField.value.trim();
+  const error = validateInput(value);
+  inputError.textContent = error;
+  if (error) return;
+  tasks.push({ text: value, done: false });
+  inputField.value = '';
+  saveTasks();
+  renderTasks();
+};
