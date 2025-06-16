@@ -18,3 +18,5 @@ const renderTasks = (filter = currentFilter) => {
   taskListEl.innerHTML = '';
   tasks.forEach((task, index) => {
     if ((filter === 'done' && !task.done) || (filter === 'todo' && task.done)) return;
+    const taskDiv = document.createElement('div');
+    taskDiv.className = 'task' + (task.done ? ' done' : '');
