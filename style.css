@@ -70,4 +70,10 @@ input[type="text"] {
 .tabs button.active {
     background-color: #007f8a;
 }
-.task-list {}
+.task-list {
+  width: 90%;
+  max-width: 1000px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
