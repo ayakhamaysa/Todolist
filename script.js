@@ -51,3 +51,9 @@ const renderTasks = (filter = currentFilter) => {
     taskListEl.appendChild(taskDiv);
   });
 };
+const validateInput = text => {
+  if (!text) return 'Task cannot be empty';
+  if (!isNaN(text.charAt(0))) return 'Task must not start with a number';
+  if (text.length < 5) return 'Task must be at least 5 characters';
+  return '';
+};
