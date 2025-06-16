@@ -9,3 +9,5 @@
 let currentFilter = 'all';
 
 const saveTasks = () => localStorage.setItem('tasks', JSON.stringify(tasks));
+const renderTasks = (filter = currentFilter) => {
+  currentFilter = filter;
