@@ -92,3 +92,16 @@ const deleteDoneTasks = () => {
   saveTasks();
   renderTasks();
 };
+const deleteAllTasks = () => {
+  if (!tasks.length) return alert("No tasks to delete");
+  tasks = [];
+  saveTasks();
+  renderTasks();
+};
+
+tabs.forEach(btn => btn.addEventListener('click', () => renderTasks(btn.dataset.filter)));
+addBtn.addEventListener('click', addTask);
+deleteDoneBtn.addEventListener('click', deleteDoneTasks);
+deleteAllBtn.addEventListener('click', deleteAllTasks);
+
+window.onload = () => renderTasks();
