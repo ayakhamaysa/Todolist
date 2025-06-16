@@ -37,3 +37,17 @@ const renderTasks = (filter = currentFilter) => {
     edit.className = 'fas fa-pen';
     edit.title = 'Edit';
     edit.onclick = () => openEditPopup(index);
+    const del = document.createElement('i');
+    del.className = 'fas fa-trash';
+    del.title = 'Delete';
+    del.onclick = () => openDeletePopup(index);
+
+    actions.appendChild(check);
+    actions.appendChild(edit);
+    actions.appendChild(del);
+
+    taskDiv.appendChild(text);
+    taskDiv.appendChild(actions);
+    taskListEl.appendChild(taskDiv);
+  });
+};
