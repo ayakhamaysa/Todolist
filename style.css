@@ -67,3 +67,5 @@ input[type="text"] {
   border-radius: 6px;
   cursor: pointer;
 }
+.tabs button.active {
+}
