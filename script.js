@@ -25,3 +25,11 @@ const renderTasks = (filter = currentFilter) => {
 
     const actions = document.createElement('div');
     actions.className = 'actions';
+    const check = document.createElement('i');
+    check.className = task.done ? 'far fa-check-square' : 'far fa-square';
+    check.title = 'Toggle Done';
+    check.onclick = () => {
+      tasks[index].done = !tasks[index].done;
+      saveTasks();
+      renderTasks();
+    };
