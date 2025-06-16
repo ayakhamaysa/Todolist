@@ -77,4 +77,13 @@ input[type="text"] {
   overflow-y: auto;
   padding-right: 10px;
 }
-.task {}
+.task {
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
