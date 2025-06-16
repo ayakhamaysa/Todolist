@@ -105,3 +105,6 @@ input[type="text"] {
   cursor: pointer;
   transition: transform 0.2s;
 }
+.actions i:hover {
+  transform: scale(1.2);
+}
