@@ -111,3 +111,5 @@ input[type="text"] {
 .fa-square, .fa-check-square {
   color: green;
 }
+.fa-pen { color: orange; }
+.fa-trash { color: red; }
