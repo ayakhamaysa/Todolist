@@ -70,8 +70,6 @@
           saveTasks();
           renderTasks();
         };
-
-        // ترتيب الأيقونات: ✔ ✎ 🗑️
         actions.appendChild(toggle);
         actions.appendChild(edit);
         actions.appendChild(remove);
